@@ -3,6 +3,7 @@ Multi-topic analysis leveraging PubMed abstracts and MeSH terms.
 Please refer to the full documentation [here](https://github.com/lodeguns/BioSemanticTechII/blob/master/Topic%20Analysis%20on%20PubMed%20abstracts%20and%20MeSH%20terms%20with%20R%20and%20SPRQL.pdf).
 
 ** An interesting function **
+
 For those impatient here a query to MeSH SPARQL EndPoint of PubMed terms. These terms are extracted from the PubMed abstracts due a topic analysis. Through these types of functions and future developments it is possible to infer the causality between deseases, moreover, their comorbidities.
 
 
