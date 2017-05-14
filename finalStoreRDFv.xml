@@ -1,0 +1,557 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:abs="http://www.ncbi.nlm.nih.gov/pubmed/"
+    xmlns:qe="http://query.org/query/0001/edge/"
+    xmlns:qn="http://query.org/node/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:qt="http://query.org/query/0001/topic/"
+    xmlns:q="http://query.org/"
+    xmlns:qq="http://query.org/query/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdfs:Class rdf:about="http://query.org/topic">
+    <rdf:comment>Resource that describes the Topic Models, executed with
+                  LDA - VEM. The class for each instance of Topic presents 15 terms most important for a specific Topic
+                  and the abstracts linked.</rdf:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://query.org/node">
+    <rdf:comment>The class Node. Its instances are the terms used by the instances of the class Query,
+                  for the study of the Topics both for the study of the terms correlations (class Edge).</rdf:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/">
+    <rdf:comment>This resource is an external resource that 
+                        refers to the service of pubmed. We use this resource for link the abstracts
+                        related to a particular topic by their unique identifier.</rdf:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://query.org/edge">
+    <rdf:comment>The class Edge, its istances represents the correlations between two Nodes. 
+                  This class is cohesive with the RDF Bag container class. </rdf:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://query.org/query">
+    <rdf:comment>The class Query, its instances are the executed queries.
+                  For these reasons this class is cohesive with the class Edge and Nodes. </rdf:comment>
+  </rdfs:Class>
+  <q:edge rdf:about="http://query.org/query/0001/edge"/>
+  <rdf:Bag rdf:about="http://query.org/query/0001/topic/bag">
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#1">
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26395796">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#insulin"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#protein"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#muscle"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#endometrial"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#resistance"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#breast"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#lung"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#stress"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#studies"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#risk"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#colorectal"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#bladder"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#increased"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cancer"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#signaling"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#2">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#conditions"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cvd"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#adults"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#physical"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#hypertension"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#sirt"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#activity"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#children"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#research"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#health"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cardiovascular"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#bone"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26391722">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#chronic"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#mitochondrial"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#disease"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#3">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#dna"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#hcv"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#serum"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#infection"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#models"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#reconstruction"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#skin"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#vitamin"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cardiac"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26395490">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#stroke"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#comorbidities"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#chemotherapy"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#pituitary"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#data"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#fgf"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#4">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#clinical"/>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#studies"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#mice"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#diseases"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#total"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#care"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#tumors"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#human"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#fat"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#intake"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#adipose"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#mortality"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#tissue"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#diet"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26394722">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#dietary"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#5">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#genetic"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#hcc"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#liver"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#diabetes"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#men"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#history"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#mir"/>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#risk"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#nafld"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#mellitus"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#pancreatic"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26398515">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#consumption"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#association"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#crc"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#prostate"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#6">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#mass"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#level"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#pparî"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26390057">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#mets"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#syndrome"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#followup"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#tdm"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#compounds"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#egfr"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#igf"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#pâ€‰â€‰"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#tumor"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#analysis"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#effects"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#metabolic"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#7">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#weight"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#women"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26396684">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node rdf:resource="http://query.org/node/node#risk"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#pcos"/>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#men"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#obese"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#levels"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#smoking"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#acid"/>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#disease"/>
+        <qn:node rdf:resource="http://query.org/node/node#serum"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#higher"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#obesity"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#bmi"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#exposure"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#8">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#metformin"/>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#tumor"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#ampk"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#mutations"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#growth"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#therapy"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#development"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cell"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#symptoms"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#heart"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#apoptosis"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#proliferation"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26395424">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#pain"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cells"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#thyroid"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#9">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#surgery"/>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#disease"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#group"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26398221">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#prevalence"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cases"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#years"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#screening"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#age"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#patients"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#postoperative"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#diabetic"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#death"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#complications"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#control"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#survival"/>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#10">
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#stage"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#gene"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#kidney"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#blood"/>
+        </qn:node>
+        <qt:abspm>
+          <rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26397987">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdf:Description>
+        </qt:abspm>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#expression"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#pca"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#glucose"/>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#risk"/>
+        <qn:node rdf:resource="http://query.org/node/node#age"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#high"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#factors"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#gastric"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#renal"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#treatment"/>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#levels"/>
+      </q:topic>
+    </rdf:li>
+  </rdf:Bag>
+  <q:topic rdf:about="http://query.org/query/0001/topic"/>
+  <q:query rdf:about="http://query.org/query/0001/"/>
+</rdf:RDF>

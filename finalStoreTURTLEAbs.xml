@@ -1,0 +1,1228 @@
+@prefix qq:    <http://query.org/query/> .
+@prefix q:     <http://query.org/> .
+@prefix qe:    <http://query.org/query/0001/edge/> .
+@prefix qn:    <http://query.org/node/> .
+
+<http://query.org/node/node#cancers>
+        a       q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26394722>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/query/0001/topic/topic#3>
+        a        q:topic , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        qn:node  <http://query.org/node/node#dna> , <http://query.org/node/node#hcv> , <http://query.org/node/node#serum> , <http://query.org/node/node#infection> , <http://query.org/node/node#models> , <http://query.org/node/node#reconstruction> , <http://query.org/node/node#skin> , <http://query.org/node/node#vitamin> , <http://query.org/node/node#cardiac> , <http://query.org/node/node#stroke> , <http://query.org/node/node#comorbidities> , <http://query.org/node/node#chemotherapy> , <http://query.org/node/node#pituitary> , <http://query.org/node/node#data> , <http://query.org/node/node#fgf> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26395490> .
+
+<http://query.org/node/node#care>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#bmi>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#level>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#metformin>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#50>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#craniopharyngiomas> ;
+        qe:correlation  "0.21"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#smoking>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#insulin>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#mets>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#29>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#pituitary> ;
+        qe:correlation  "0.38"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#neoplasms>
+        a       q:node .
+
+<http://query.org/node/node#hcv>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+
+<http://query.org/node/node#desmopressin>
+        a       q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26391722>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://www.w3.org/2000/01/rdf-schema#Container>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Container> .
+
+<http://query.org/node/node#mice>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#cardiac>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#kobe>
+        a       q:node .
+
+<http://query.org/query/0001/edge/edge#37>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#craniopharyngioma> ;
+        qe:correlation  "0.25"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/edge/edge#16>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#hcas> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:query .
+
+<http://query.org/node/node#intake>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#higher>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#acid>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#6>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#cancer> , <http://query.org/node/node#diabetes> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/edge/edge#45>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#timeperiod> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#permanent>
+        a       q:node .
+
+<http://query.org/node/node#concentrating>
+        a       q:node .
+
+<http://query.org/node/node#hypervascular>
+        a       q:node .
+
+<http://query.org/node/node#pain>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26398221>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/node/node#survival>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#24>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#diabetes> , <http://query.org/node/node#association> ;
+        qe:correlation  "0.23"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#fgf>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#consumption>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26390057>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/node/node#human>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#breast>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#mass>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#sellar>
+        a       q:node .
+
+<http://query.org/node/node#colorectal>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#intracranial>
+        a       q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>
+                "This resource is an external resource that \n                        refers to the service of pubmed. We use this resource for link the abstracts\n                        related to a particular topic by their unique identifier." ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ncbi.nlm.nih.gov/pubmed/> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/node/node#dietary>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#models>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Container> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> .
+
+<http://query.org/node/node#oligodendroglioma>
+        a       q:node .
+
+<http://query.org/node/node#egfr>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#high>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/topic/topic#10>
+        a        <http://www.w3.org/2000/01/rdf-schema#Resource> , q:topic ;
+        qn:node  <http://query.org/node/node#stage> , <http://query.org/node/node#gene> , <http://query.org/node/node#kidney> , <http://query.org/node/node#blood> , <http://query.org/node/node#expression> , <http://query.org/node/node#pca> , <http://query.org/node/node#glucose> , <http://query.org/node/node#risk> , <http://query.org/node/node#age> , <http://query.org/node/node#high> , <http://query.org/node/node#factors> , <http://query.org/node/node#gastric> , <http://query.org/node/node#renal> , <http://query.org/node/node#treatment> , <http://query.org/node/node#levels> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26397987> .
+
+<http://query.org/query/0001/topic/topic#6>
+        a        q:topic , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        qn:node  <http://query.org/node/node#level> , <http://query.org/node/node#mass> , <http://query.org/node/node#pparî> , <http://query.org/node/node#mets> , <http://query.org/node/node#syndrome> , <http://query.org/node/node#followup> , <http://query.org/node/node#tdm> , <http://query.org/node/node#compounds> , <http://query.org/node/node#egfr> , <http://query.org/node/node#pâ€‰â€‰> , <http://query.org/node/node#igf> , <http://query.org/node/node#tumor> , <http://query.org/node/node#analysis> , <http://query.org/node/node#effects> , <http://query.org/node/node#metabolic> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26390057> .
+
+<http://query.org/query/0001/edge/edge#32>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#cerebrospinal> ;
+        qe:correlation  "0.31"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.w3.org/2000/01/rdf-schema#range>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://query.org/query/0001/edge/edge#11>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#extrapituitary> ;
+        qe:correlation  "0.26"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#synchronous>
+        a       q:node .
+
+<http://query.org/node/node#comorbidities>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#igf>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#antidiuretic>
+        a       q:node .
+
+<http://query.org/node/node#tmzinduced>
+        a       q:node .
+
+<http://query.org/node/node#stress>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#pca>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#1>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#cancer> , <http://query.org/node/node#breast> ;
+        qe:correlation  "0.33"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#levels>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#data>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+
+<http://query.org/query/0001/edge/edge#40>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#anterior> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#prevalence>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#19>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#synchronous> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#vitamin>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#resistance>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#signaling>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#cancer>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#metabolic>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#9>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#metachronous> ;
+        qe:correlation  "0.32"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/topic/topic#1>
+        a        q:topic , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        qn:node  <http://query.org/node/node#insulin> , <http://query.org/node/node#protein> , <http://query.org/node/node#muscle> , <http://query.org/node/node#endometrial> , <http://query.org/node/node#resistance> , <http://query.org/node/node#breast> , <http://query.org/node/node#lung> , <http://query.org/node/node#stress> , <http://query.org/node/node#studies> , <http://query.org/node/node#risk> , <http://query.org/node/node#colorectal> , <http://query.org/node/node#bladder> , <http://query.org/node/node#increased> , <http://query.org/node/node#cancer> , <http://query.org/node/node#signaling> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26395796> .
+
+<http://query.org/node/node#genetic>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#expression>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#48>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#bright> ;
+        qe:correlation  "0.21"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#pancreatic>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#27>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#tmz> ;
+        qe:correlation  "0.41"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.w3.org/2000/01/rdf-schema#Resource>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/node/node#obesity>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+<http://query.org/node/node#mutations>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#skin>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#lung>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/2000/01/rdf-schema#domain>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty> .
+
+<http://www.w3.org/2000/01/rdf-schema#seeAlso>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+
+<http://query.org/node/node#acromegalyassociated>
+        a       q:node .
+
+<http://query.org/node/node#studies>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/topic/topic#9>
+        a        <http://www.w3.org/2000/01/rdf-schema#Resource> , q:topic ;
+        qn:node  <http://query.org/node/node#surgery> , <http://query.org/node/node#disease> , <http://query.org/node/node#group> , <http://query.org/node/node#prevalence> , <http://query.org/node/node#cases> , <http://query.org/node/node#years> , <http://query.org/node/node#screening> , <http://query.org/node/node#age> , <http://query.org/node/node#patients> , <http://query.org/node/node#postoperative> , <http://query.org/node/node#diabetic> , <http://query.org/node/node#complications> , <http://query.org/node/node#death> , <http://query.org/node/node#control> , <http://query.org/node/node#survival> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26398221> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> .
+
+<http://query.org/query/0001/edge/edge#35>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#polydipsia> ;
+        qe:correlation  "0.28"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/edge/edge#14>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#fnh> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.w3.org/2000/01/rdf-schema#Datatype>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+
+<http://query.org/node/node#chemotherapy>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#disease>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#thyroid>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#control>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#4>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#cancer> , <http://query.org/node/node#cancers> ;
+        qe:correlation  "0.25"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26395424>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/node/node#prostate>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/query/0001/edge/edge#43>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#pathologicallyconfirmed> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#blood>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+q:query  a      <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>
+                "The class Query, its instances are the executed queries.\n                  For these reasons this class is cohesive with the class Edge and Nodes. " , "The class Query, its instances are the executed queries.\n                   For these reasons this class is cohesive with the class Edge and Nodes. " ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                q:query , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/query/0001/edge/edge#22>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#diabetes> , <http://query.org/node/node#risk> ;
+        qe:correlation  "0.26"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#panhypopituitarism>
+        a       q:node .
+
+qe:bag  a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                <http://query.org/query/0001/edge/edge#1> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_10>
+                <http://query.org/query/0001/edge/edge#10> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_11>
+                <http://query.org/query/0001/edge/edge#11> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_12>
+                <http://query.org/query/0001/edge/edge#12> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_13>
+                <http://query.org/query/0001/edge/edge#13> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_14>
+                <http://query.org/query/0001/edge/edge#14> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_15>
+                <http://query.org/query/0001/edge/edge#15> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_16>
+                <http://query.org/query/0001/edge/edge#16> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_17>
+                <http://query.org/query/0001/edge/edge#17> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_18>
+                <http://query.org/query/0001/edge/edge#18> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_19>
+                <http://query.org/query/0001/edge/edge#19> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2>
+                <http://query.org/query/0001/edge/edge#2> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_20>
+                <http://query.org/query/0001/edge/edge#20> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_21>
+                <http://query.org/query/0001/edge/edge#21> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_22>
+                <http://query.org/query/0001/edge/edge#22> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_23>
+                <http://query.org/query/0001/edge/edge#23> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_24>
+                <http://query.org/query/0001/edge/edge#24> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_25>
+                <http://query.org/query/0001/edge/edge#25> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_26>
+                <http://query.org/query/0001/edge/edge#26> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_27>
+                <http://query.org/query/0001/edge/edge#27> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_28>
+                <http://query.org/query/0001/edge/edge#28> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_29>
+                <http://query.org/query/0001/edge/edge#29> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3>
+                <http://query.org/query/0001/edge/edge#3> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_30>
+                <http://query.org/query/0001/edge/edge#30> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_31>
+                <http://query.org/query/0001/edge/edge#31> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_32>
+                <http://query.org/query/0001/edge/edge#32> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_33>
+                <http://query.org/query/0001/edge/edge#33> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_34>
+                <http://query.org/query/0001/edge/edge#34> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_35>
+                <http://query.org/query/0001/edge/edge#35> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_36>
+                <http://query.org/query/0001/edge/edge#36> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_37>
+                <http://query.org/query/0001/edge/edge#37> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_38>
+                <http://query.org/query/0001/edge/edge#38> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_39>
+                <http://query.org/query/0001/edge/edge#39> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4>
+                <http://query.org/query/0001/edge/edge#4> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_40>
+                <http://query.org/query/0001/edge/edge#40> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_41>
+                <http://query.org/query/0001/edge/edge#41> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_42>
+                <http://query.org/query/0001/edge/edge#42> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_43>
+                <http://query.org/query/0001/edge/edge#43> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_44>
+                <http://query.org/query/0001/edge/edge#44> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_45>
+                <http://query.org/query/0001/edge/edge#45> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_46>
+                <http://query.org/query/0001/edge/edge#46> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_47>
+                <http://query.org/query/0001/edge/edge#47> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_48>
+                <http://query.org/query/0001/edge/edge#48> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_49>
+                <http://query.org/query/0001/edge/edge#49> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_5>
+                <http://query.org/query/0001/edge/edge#5> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_50>
+                <http://query.org/query/0001/edge/edge#50> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_51>
+                <http://query.org/query/0001/edge/edge#51> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_52>
+                <http://query.org/query/0001/edge/edge#52> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_6>
+                <http://query.org/query/0001/edge/edge#6> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_7>
+                <http://query.org/query/0001/edge/edge#7> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_8>
+                <http://query.org/query/0001/edge/edge#8> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_9>
+                <http://query.org/query/0001/edge/edge#9> .
+
+<http://query.org/node/node#glucose>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/topic/bag>
+        a       <http://www.w3.org/2000/01/rdf-schema#Container> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                <http://query.org/query/0001/topic/topic#1> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_10>
+                <http://query.org/query/0001/topic/topic#10> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2>
+                <http://query.org/query/0001/topic/topic#2> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3>
+                <http://query.org/query/0001/topic/topic#3> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4>
+                <http://query.org/query/0001/topic/topic#4> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_5>
+                <http://query.org/query/0001/topic/topic#5> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_6>
+                <http://query.org/query/0001/topic/topic#6> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_7>
+                <http://query.org/query/0001/topic/topic#7> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_8>
+                <http://query.org/query/0001/topic/topic#8> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#_9>
+                <http://query.org/query/0001/topic/topic#9> .
+
+<http://query.org/node/node#treatment>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#women>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#hcas>
+        a       q:node .
+
+<http://query.org/node/node#cardiovascular>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#screening>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#hypertension>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#51>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#intracranial> ;
+        qe:correlation  "0.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/topic/topic#4>
+        a        <http://www.w3.org/2000/01/rdf-schema#Resource> , q:topic ;
+        qn:node  <http://query.org/node/node#clinical> , <http://query.org/node/node#studies> , <http://query.org/node/node#mice> , <http://query.org/node/node#diseases> , <http://query.org/node/node#total> , <http://query.org/node/node#care> , <http://query.org/node/node#tumors> , <http://query.org/node/node#human> , <http://query.org/node/node#fat> , <http://query.org/node/node#intake> , <http://query.org/node/node#adipose> , <http://query.org/node/node#mortality> , <http://query.org/node/node#tissue> , <http://query.org/node/node#diet> , <http://query.org/node/node#dietary> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26394722> .
+
+<http://query.org/node/node#cvd>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#30>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#polyuria> ;
+        qe:correlation  "0.37"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#adults>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> .
+
+<http://query.org/node/node#adipose>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#bone>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#health>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#symptoms>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#endometrial>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#mir>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#surgery>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#alkylating>
+        a       q:node .
+
+<http://query.org/node/node#stage>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#conditions>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#oligoastrocytoma>
+        a       q:node .
+
+<http://query.org/query/0001/edge/edge#17>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#hypervascular> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/edge/edge#38>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#visual> ;
+        qe:correlation  "0.25"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#polydipsia>
+        a       q:node .
+
+<http://query.org/node/node#patientage>
+        a       q:node .
+
+<http://query.org/node/node#type>
+        a       q:node .
+
+<http://query.org/node/node#infection>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#therapy>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#endoscopic>
+        a       q:node .
+
+<http://query.org/node/node#kidney>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26395490>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/query/0001/edge/edge#7>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#cancer> , <http://query.org/node/node#association> ;
+        qe:correlation  "0.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#mortality>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#exposure>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#46>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#recur> ;
+        qe:correlation  "0.23"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/edge/edge#25>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#oligoastrocytoma> ;
+        qe:correlation  "0.41"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#diet>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#weight>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#nafld>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#risk>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#tumors>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#endonasal>
+        a       q:node .
+
+<http://query.org/node/node#bladder>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#fnh>
+        a       q:node .
+
+q:edge  a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>
+                "The class Edge, its istances represents the correlations between two Nodes. \n                  This class is cohesive with the RDF Bag container class. " , "The class Edge, its istances represents the correlations between two Nodes. \n                        This class is cohesive with the RDF Bag container class. " ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                q:edge , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/query/0001/topic/topic#7>
+        a        <http://www.w3.org/2000/01/rdf-schema#Resource> , q:topic ;
+        qn:node  <http://query.org/node/node#weight> , <http://query.org/node/node#women> , <http://query.org/node/node#risk> , <http://query.org/node/node#pcos> , <http://query.org/node/node#men> , <http://query.org/node/node#obese> , <http://query.org/node/node#levels> , <http://query.org/node/node#smoking> , <http://query.org/node/node#disease> , <http://query.org/node/node#acid> , <http://query.org/node/node#serum> , <http://query.org/node/node#bmi> , <http://query.org/node/node#obesity> , <http://query.org/node/node#higher> , <http://query.org/node/node#exposure> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26396684> .
+
+<http://query.org/query/0001/edge/edge#33>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#sellar> ;
+        qe:correlation  "0.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#total>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#12>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#cteaching> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Container> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> .
+
+<http://query.org/node/node#pituitary>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+q:topic  a      <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>
+                "Resource that describes the Topic Models, executed with\n                  LDA - VEM. The class for each instance of Topic presents 15 terms most important for a specific Topic\n                  and the abstracts linked." ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                q:topic , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/node/node#pâ€‰â€‰>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://query.org/query/0001/edge/edge#2>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#cancer> , <http://query.org/node/node#risk> ;
+        qe:correlation  "0.31"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#association>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#extrapituitary>
+        a       q:node .
+
+<http://query.org/query/0001/edge/edge#41>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#endonasal> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#cases>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#20>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#tumourlike> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#renal>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#effects>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#timeperiod>
+        a       q:node .
+
+<http://query.org/node/node#fat>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#research>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#diseases>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#stroke>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#ampk>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/topic/topic#2>
+        a        <http://www.w3.org/2000/01/rdf-schema#Resource> , q:topic ;
+        qn:node  <http://query.org/node/node#conditions> , <http://query.org/node/node#cvd> , <http://query.org/node/node#adults> , <http://query.org/node/node#physical> , <http://query.org/node/node#hypertension> , <http://query.org/node/node#sirt> , <http://query.org/node/node#activity> , <http://query.org/node/node#children> , <http://query.org/node/node#research> , <http://query.org/node/node#health> , <http://query.org/node/node#cardiovascular> , <http://query.org/node/node#bone> , <http://query.org/node/node#chronic> , <http://query.org/node/node#mitochondrial> , <http://query.org/node/node#disease> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26391722> .
+
+<http://query.org/node/node#age>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#history>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#49>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#concentrating> ;
+        qe:correlation  "0.21"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.w3.org/2000/01/rdf-schema#subClassOf>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://query.org/query/0001/edge/edge#28>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#tmzinduced> ;
+        qe:correlation  "0.41"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#diabetes>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#patients>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#insipidus>
+        a       q:node .
+
+<http://query.org/node/node#tumourlike>
+        a       q:node .
+
+<http://query.org/node/node#mellitus>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#tissue>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> .
+
+<http://query.org/node/node#tdm>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#children>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#increased>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#followup>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+q:node  a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>
+                "The class Node. Its instances are the terms used by the instances of the class Query,\n                  for the study of the Topics both for the study of the terms correlations (class Edge)." , "The class Node. Its instances are the terms used by the instances of the class Query,\n                        for the study of the Topics both for the study of the terms correlations (class Edge)." ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                q:node , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/query/0001/edge/edge#36>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#endoscopic> ;
+        qe:correlation  "0.26"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/edge/edge#15>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#fnhs> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#men>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#cells>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#gastric>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#5>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#cancer> , <http://query.org/node/node#colorectal> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#polyuria>
+        a       q:node .
+
+<http://query.org/node/node#factors>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#reconstruction>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#44>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#patientage> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#protein>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#23>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#diabetes> , <http://query.org/node/node#cancer> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#visual>
+        a       q:node .
+
+<http://query.org/node/node#analysis>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Container> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+
+<http://query.org/node/node#mitochondrial>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#peliosis>
+        a       q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26397987>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/node/node#proliferation>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/2000/01/rdf-schema#comment>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+<http://query.org/node/node#pathologicallyconfirmed>
+        a       q:node .
+
+<http://query.org/node/node#diabetic>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#52>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#permanent> ;
+        qe:correlation  "0.2"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/topic/topic#5>
+        a        <http://www.w3.org/2000/01/rdf-schema#Resource> , q:topic ;
+        qn:node  <http://query.org/node/node#genetic> , <http://query.org/node/node#hcc> , <http://query.org/node/node#liver> , <http://query.org/node/node#diabetes> , <http://query.org/node/node#men> , <http://query.org/node/node#history> , <http://query.org/node/node#mir> , <http://query.org/node/node#risk> , <http://query.org/node/node#nafld> , <http://query.org/node/node#mellitus> , <http://query.org/node/node#pancreatic> , <http://query.org/node/node#association> , <http://query.org/node/node#consumption> , <http://query.org/node/node#crc> , <http://query.org/node/node#prostate> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26398515> .
+
+<http://query.org/query/0001/edge/edge#31>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#desmopressin> ;
+        qe:correlation  "0.32"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#crc>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#sirt>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#10>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#acromegalyassociated> ;
+        qe:correlation  "0.29"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#craniopharyngiomas>
+        a       q:node .
+
+<http://query.org/node/node#hcc>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#recur>
+        a       q:node .
+
+<http://query.org/node/node#complications>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> .
+
+<http://query.org/node/node#physical>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#compounds>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#dna>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#cteaching>
+        a       q:node .
+
+<http://query.org/node/node#years>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#activity>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#transsphenoidal>
+        a       q:node .
+
+<http://query.org/query/0001/edge/edge#39>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#alkylating> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#chronic>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26395796>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/query/0001/edge/edge#18>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#peliosis> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/query/0001/topic>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:topic .
+
+<http://query.org/node/node#apoptosis>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#syndrome>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#8>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#kobe> ;
+        qe:correlation  "0.34"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#growth>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#obese>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#clinical>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#47>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#antidiuretic> ;
+        qe:correlation  "0.21"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#tmz>
+        a       q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/query/0001/edge/edge#26>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#oligodendroglioma> ;
+        qe:correlation  "0.41"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso> , <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> .
+
+<http://query.org/node/node#death>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26396684>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/node/node#pcos>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#pparî>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#serum>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#tumor>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/26398515>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.ncbi.nlm.nih.gov/pubmed/> .
+
+<http://query.org/node/node#liver>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#cell>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/topic/topic#8>
+        a        <http://www.w3.org/2000/01/rdf-schema#Resource> , q:topic ;
+        qn:node  <http://query.org/node/node#metformin> , <http://query.org/node/node#tumor> , <http://query.org/node/node#ampk> , <http://query.org/node/node#mutations> , <http://query.org/node/node#growth> , <http://query.org/node/node#therapy> , <http://query.org/node/node#development> , <http://query.org/node/node#cell> , <http://query.org/node/node#symptoms> , <http://query.org/node/node#heart> , <http://query.org/node/node#apoptosis> , <http://query.org/node/node#proliferation> , <http://query.org/node/node#pain> , <http://query.org/node/node#cells> , <http://query.org/node/node#thyroid> ;
+        <http://query.org/query/0001/topic/abspm>
+                <http://www.ncbi.nlm.nih.gov/pubmed/26395424> .
+
+<http://query.org/query/0001/edge/edge#34>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#transsphenoidal> ;
+        qe:correlation  "0.29"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#gene>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge/edge#13>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#neoplasms> , <http://query.org/node/node#edmonton> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#development>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#cerebrospinal>
+        a       q:node .
+
+<http://query.org/node/node#fnhs>
+        a       q:node .
+
+<http://query.org/node/node#anterior>
+        a       q:node .
+
+<http://query.org/query/0001/edge/edge#3>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#cancer> , <http://query.org/node/node#prostate> ;
+        qe:correlation  "0.28"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://www.w3.org/2000/01/rdf-schema#Literal>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Literal> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/node/node#group>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/query/0001/edge>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:edge .
+
+<http://query.org/query/0001/edge/edge#42>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#insipidus> , <http://query.org/node/node#panhypopituitarism> ;
+        qe:correlation  "0.24"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#postoperative>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/2000/01/rdf-schema#Class>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://query.org/query/0001/edge/edge#21>
+        a               q:edge ;
+        qn:node         <http://query.org/node/node#diabetes> , <http://query.org/node/node#type> ;
+        qe:correlation  "0.4"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://query.org/node/node#metachronous>
+        a       q:node .
+
+<http://query.org/node/node#heart>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://query.org/node/node#craniopharyngioma>
+        a       q:node .
+
+<http://query.org/node/node#muscle>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , q:node .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> .
+
+<http://query.org/node/node#edmonton>
+        a       q:node .
+
+<http://query.org/node/node#bright>
+        a       q:node .
+
+<http://www.w3.org/2000/01/rdf-schema#label>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Literal> .

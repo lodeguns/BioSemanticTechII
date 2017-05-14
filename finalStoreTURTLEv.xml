@@ -1,0 +1,533 @@
+@prefix qq:    <http://query.org/query/> .
+@prefix q:     <http://query.org/> .
+@prefix qt:    <http://query.org/query/0001/topic/> .
+@prefix abs:   <http://www.ncbi.nlm.nih.gov/pubmed/> .
+@prefix qe:    <http://query.org/query/0001/edge/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qn:    <http://query.org/node/> .
+
+abs:26394722  a  abs: .
+
+<http://query.org/node/node#care>
+        a       q:node .
+
+<http://query.org/query/0001/topic/topic#3>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#dna> , <http://query.org/node/node#hcv> , <http://query.org/node/node#serum> , <http://query.org/node/node#infection> , <http://query.org/node/node#models> , <http://query.org/node/node#reconstruction> , <http://query.org/node/node#skin> , <http://query.org/node/node#vitamin> , <http://query.org/node/node#cardiac> , <http://query.org/node/node#stroke> , <http://query.org/node/node#comorbidities> , <http://query.org/node/node#chemotherapy> , <http://query.org/node/node#pituitary> , <http://query.org/node/node#data> , <http://query.org/node/node#fgf> ;
+        qt:abspm  abs:26395490 .
+
+<http://query.org/node/node#bmi>
+        a       q:node .
+
+<http://query.org/node/node#level>
+        a       q:node .
+
+<http://query.org/node/node#metformin>
+        a       q:node .
+
+<http://query.org/node/node#smoking>
+        a       q:node .
+
+<http://query.org/node/node#insulin>
+        a       q:node .
+
+<http://query.org/node/node#mets>
+        a       q:node .
+
+<http://query.org/node/node#hcv>
+        a       q:node .
+
+abs:26391722  a  abs: .
+
+<http://query.org/node/node#mice>
+        a       q:node .
+
+<http://query.org/node/node#cardiac>
+        a       q:node .
+
+<http://query.org/query/0001/>
+        a       q:query .
+
+<http://query.org/node/node#intake>
+        a       q:node .
+
+<http://query.org/node/node#higher>
+        a       q:node .
+
+<http://query.org/node/node#acid>
+        a       q:node .
+
+<http://query.org/node/node#pain>
+        a       q:node .
+
+<http://query.org/node/node#survival>
+        a       q:node .
+
+<http://query.org/node/node#fgf>
+        a       q:node .
+
+<http://query.org/node/node#consumption>
+        a       q:node .
+
+abs:26390057  a  abs: .
+
+<http://query.org/node/node#human>
+        a       q:node .
+
+<http://query.org/node/node#breast>
+        a       q:node .
+
+<http://query.org/node/node#mass>
+        a       q:node .
+
+<http://query.org/node/node#colorectal>
+        a       q:node .
+
+abs:26398221  a  abs: .
+
+abs:    a            rdfs:Class ;
+        rdf:comment  "This resource is an external resource that \n                        refers to the service of pubmed. We use this resource for link the abstracts\n                        related to a particular topic by their unique identifier." .
+
+<http://query.org/node/node#dietary>
+        a       q:node .
+
+<http://query.org/node/node#models>
+        a       q:node .
+
+<http://query.org/node/node#high>
+        a       q:node .
+
+<http://query.org/node/node#egfr>
+        a       q:node .
+
+<http://query.org/query/0001/topic/topic#10>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#stage> , <http://query.org/node/node#gene> , <http://query.org/node/node#kidney> , <http://query.org/node/node#blood> , <http://query.org/node/node#expression> , <http://query.org/node/node#pca> , <http://query.org/node/node#glucose> , <http://query.org/node/node#risk> , <http://query.org/node/node#age> , <http://query.org/node/node#high> , <http://query.org/node/node#factors> , <http://query.org/node/node#gastric> , <http://query.org/node/node#renal> , <http://query.org/node/node#treatment> , <http://query.org/node/node#levels> ;
+        qt:abspm  abs:26397987 .
+
+<http://query.org/query/0001/topic/topic#6>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#mass> , <http://query.org/node/node#level> , <http://query.org/node/node#pparî> , <http://query.org/node/node#mets> , <http://query.org/node/node#syndrome> , <http://query.org/node/node#followup> , <http://query.org/node/node#tdm> , <http://query.org/node/node#compounds> , <http://query.org/node/node#egfr> , <http://query.org/node/node#igf> , <http://query.org/node/node#pâ€‰â€‰> , <http://query.org/node/node#tumor> , <http://query.org/node/node#analysis> , <http://query.org/node/node#effects> , <http://query.org/node/node#metabolic> ;
+        qt:abspm  abs:26390057 .
+
+<http://query.org/node/node#comorbidities>
+        a       q:node .
+
+<http://query.org/node/node#igf>
+        a       q:node .
+
+<http://query.org/node/node#pca>
+        a       q:node .
+
+<http://query.org/node/node#levels>
+        a       q:node .
+
+<http://query.org/node/node#data>
+        a       q:node .
+
+<http://query.org/node/node#stress>
+        a       q:node .
+
+<http://query.org/node/node#prevalence>
+        a       q:node .
+
+<http://query.org/node/node#vitamin>
+        a       q:node .
+
+<http://query.org/node/node#signaling>
+        a       q:node .
+
+<http://query.org/node/node#resistance>
+        a       q:node .
+
+<http://query.org/node/node#cancer>
+        a       q:node .
+
+<http://query.org/node/node#metabolic>
+        a       q:node .
+
+<http://query.org/node/node#genetic>
+        a       q:node .
+
+<http://query.org/node/node#expression>
+        a       q:node .
+
+<http://query.org/query/0001/topic/topic#1>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#insulin> , <http://query.org/node/node#protein> , <http://query.org/node/node#muscle> , <http://query.org/node/node#endometrial> , <http://query.org/node/node#resistance> , <http://query.org/node/node#breast> , <http://query.org/node/node#lung> , <http://query.org/node/node#stress> , <http://query.org/node/node#studies> , <http://query.org/node/node#risk> , <http://query.org/node/node#colorectal> , <http://query.org/node/node#bladder> , <http://query.org/node/node#increased> , <http://query.org/node/node#cancer> , <http://query.org/node/node#signaling> ;
+        qt:abspm  abs:26395796 .
+
+<http://query.org/node/node#pancreatic>
+        a       q:node .
+
+<http://query.org/node/node#obesity>
+        a       q:node .
+
+<http://query.org/node/node#mutations>
+        a       q:node .
+
+<http://query.org/node/node#skin>
+        a       q:node .
+
+<http://query.org/node/node#lung>
+        a       q:node .
+
+<http://query.org/query/0001/topic/topic#9>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#surgery> , <http://query.org/node/node#disease> , <http://query.org/node/node#group> , <http://query.org/node/node#prevalence> , <http://query.org/node/node#cases> , <http://query.org/node/node#years> , <http://query.org/node/node#screening> , <http://query.org/node/node#age> , <http://query.org/node/node#patients> , <http://query.org/node/node#postoperative> , <http://query.org/node/node#diabetic> , <http://query.org/node/node#death> , <http://query.org/node/node#complications> , <http://query.org/node/node#control> , <http://query.org/node/node#survival> ;
+        qt:abspm  abs:26398221 .
+
+<http://query.org/node/node#studies>
+        a       q:node .
+
+<http://query.org/node/node#chemotherapy>
+        a       q:node .
+
+<http://query.org/node/node#disease>
+        a       q:node .
+
+<http://query.org/node/node#thyroid>
+        a       q:node .
+
+<http://query.org/node/node#control>
+        a       q:node .
+
+<http://query.org/node/node#prostate>
+        a       q:node .
+
+<http://query.org/node/node#blood>
+        a       q:node .
+
+q:query  a           rdfs:Class ;
+        rdf:comment  "The class Query, its instances are the executed queries.\n                  For these reasons this class is cohesive with the class Edge and Nodes. " .
+
+abs:26395424  a  abs: .
+
+<http://query.org/node/node#glucose>
+        a       q:node .
+
+<http://query.org/node/node#women>
+        a       q:node .
+
+<http://query.org/node/node#treatment>
+        a       q:node .
+
+qt:bag  a        rdf:Bag ;
+        rdf:_1   <http://query.org/query/0001/topic/topic#1> ;
+        rdf:_10  <http://query.org/query/0001/topic/topic#10> ;
+        rdf:_2   <http://query.org/query/0001/topic/topic#2> ;
+        rdf:_3   <http://query.org/query/0001/topic/topic#3> ;
+        rdf:_4   <http://query.org/query/0001/topic/topic#4> ;
+        rdf:_5   <http://query.org/query/0001/topic/topic#5> ;
+        rdf:_6   <http://query.org/query/0001/topic/topic#6> ;
+        rdf:_7   <http://query.org/query/0001/topic/topic#7> ;
+        rdf:_8   <http://query.org/query/0001/topic/topic#8> ;
+        rdf:_9   <http://query.org/query/0001/topic/topic#9> .
+
+<http://query.org/node/node#cardiovascular>
+        a       q:node .
+
+<http://query.org/node/node#hypertension>
+        a       q:node .
+
+<http://query.org/query/0001/topic/topic#4>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#clinical> , <http://query.org/node/node#studies> , <http://query.org/node/node#mice> , <http://query.org/node/node#diseases> , <http://query.org/node/node#total> , <http://query.org/node/node#care> , <http://query.org/node/node#tumors> , <http://query.org/node/node#human> , <http://query.org/node/node#fat> , <http://query.org/node/node#intake> , <http://query.org/node/node#adipose> , <http://query.org/node/node#mortality> , <http://query.org/node/node#tissue> , <http://query.org/node/node#diet> , <http://query.org/node/node#dietary> ;
+        qt:abspm  abs:26394722 .
+
+<http://query.org/node/node#cvd>
+        a       q:node .
+
+<http://query.org/node/node#adults>
+        a       q:node .
+
+<http://query.org/node/node#screening>
+        a       q:node .
+
+<http://query.org/node/node#adipose>
+        a       q:node .
+
+<http://query.org/node/node#health>
+        a       q:node .
+
+<http://query.org/node/node#bone>
+        a       q:node .
+
+<http://query.org/node/node#symptoms>
+        a       q:node .
+
+<http://query.org/node/node#endometrial>
+        a       q:node .
+
+<http://query.org/node/node#stage>
+        a       q:node .
+
+<http://query.org/node/node#conditions>
+        a       q:node .
+
+<http://query.org/node/node#surgery>
+        a       q:node .
+
+<http://query.org/node/node#mir>
+        a       q:node .
+
+<http://query.org/node/node#infection>
+        a       q:node .
+
+<http://query.org/node/node#therapy>
+        a       q:node .
+
+<http://query.org/node/node#kidney>
+        a       q:node .
+
+abs:26395490  a  abs: .
+
+<http://query.org/node/node#mortality>
+        a       q:node .
+
+<http://query.org/node/node#exposure>
+        a       q:node .
+
+<http://query.org/node/node#diet>
+        a       q:node .
+
+<http://query.org/node/node#weight>
+        a       q:node .
+
+<http://query.org/node/node#nafld>
+        a       q:node .
+
+<http://query.org/node/node#risk>
+        a       q:node .
+
+<http://query.org/node/node#tumors>
+        a       q:node .
+
+<http://query.org/node/node#bladder>
+        a       q:node .
+
+q:edge  a            rdfs:Class ;
+        rdf:comment  "The class Edge, its istances represents the correlations between two Nodes. \n                  This class is cohesive with the RDF Bag container class. " .
+
+<http://query.org/query/0001/topic/topic#7>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#weight> , <http://query.org/node/node#women> , <http://query.org/node/node#risk> , <http://query.org/node/node#pcos> , <http://query.org/node/node#men> , <http://query.org/node/node#obese> , <http://query.org/node/node#levels> , <http://query.org/node/node#smoking> , <http://query.org/node/node#acid> , <http://query.org/node/node#disease> , <http://query.org/node/node#serum> , <http://query.org/node/node#higher> , <http://query.org/node/node#obesity> , <http://query.org/node/node#bmi> , <http://query.org/node/node#exposure> ;
+        qt:abspm  abs:26396684 .
+
+<http://query.org/node/node#total>
+        a       q:node .
+
+<http://query.org/node/node#pituitary>
+        a       q:node .
+
+q:topic  a           rdfs:Class ;
+        rdf:comment  "Resource that describes the Topic Models, executed with\n                  LDA - VEM. The class for each instance of Topic presents 15 terms most important for a specific Topic\n                  and the abstracts linked." .
+
+<http://query.org/node/node#pâ€‰â€‰>
+        a       q:node .
+
+<http://query.org/node/node#association>
+        a       q:node .
+
+<http://query.org/node/node#cases>
+        a       q:node .
+
+<http://query.org/node/node#renal>
+        a       q:node .
+
+<http://query.org/node/node#effects>
+        a       q:node .
+
+<http://query.org/node/node#fat>
+        a       q:node .
+
+<http://query.org/node/node#research>
+        a       q:node .
+
+<http://query.org/node/node#diseases>
+        a       q:node .
+
+<http://query.org/node/node#stroke>
+        a       q:node .
+
+<http://query.org/node/node#ampk>
+        a       q:node .
+
+<http://query.org/node/node#age>
+        a       q:node .
+
+<http://query.org/node/node#history>
+        a       q:node .
+
+<http://query.org/query/0001/topic/topic#2>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#conditions> , <http://query.org/node/node#cvd> , <http://query.org/node/node#adults> , <http://query.org/node/node#physical> , <http://query.org/node/node#hypertension> , <http://query.org/node/node#sirt> , <http://query.org/node/node#activity> , <http://query.org/node/node#children> , <http://query.org/node/node#research> , <http://query.org/node/node#health> , <http://query.org/node/node#cardiovascular> , <http://query.org/node/node#bone> , <http://query.org/node/node#chronic> , <http://query.org/node/node#mitochondrial> , <http://query.org/node/node#disease> ;
+        qt:abspm  abs:26391722 .
+
+<http://query.org/node/node#diabetes>
+        a       q:node .
+
+<http://query.org/node/node#patients>
+        a       q:node .
+
+<http://query.org/node/node#mellitus>
+        a       q:node .
+
+<http://query.org/node/node#tissue>
+        a       q:node .
+
+<http://query.org/node/node#tdm>
+        a       q:node .
+
+<http://query.org/node/node#children>
+        a       q:node .
+
+<http://query.org/node/node#increased>
+        a       q:node .
+
+<http://query.org/node/node#followup>
+        a       q:node .
+
+q:node  a            rdfs:Class ;
+        rdf:comment  "The class Node. Its instances are the terms used by the instances of the class Query,\n                  for the study of the Topics both for the study of the terms correlations (class Edge)." .
+
+<http://query.org/node/node#men>
+        a       q:node .
+
+<http://query.org/node/node#cells>
+        a       q:node .
+
+<http://query.org/node/node#gastric>
+        a       q:node .
+
+<http://query.org/node/node#factors>
+        a       q:node .
+
+<http://query.org/node/node#reconstruction>
+        a       q:node .
+
+<http://query.org/node/node#protein>
+        a       q:node .
+
+<http://query.org/node/node#analysis>
+        a       q:node .
+
+<http://query.org/node/node#mitochondrial>
+        a       q:node .
+
+abs:26397987  a  abs: .
+
+<http://query.org/node/node#proliferation>
+        a       q:node .
+
+<http://query.org/node/node#diabetic>
+        a       q:node .
+
+<http://query.org/query/0001/topic/topic#5>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#genetic> , <http://query.org/node/node#hcc> , <http://query.org/node/node#liver> , <http://query.org/node/node#diabetes> , <http://query.org/node/node#men> , <http://query.org/node/node#history> , <http://query.org/node/node#mir> , <http://query.org/node/node#risk> , <http://query.org/node/node#nafld> , <http://query.org/node/node#mellitus> , <http://query.org/node/node#pancreatic> , <http://query.org/node/node#consumption> , <http://query.org/node/node#association> , <http://query.org/node/node#crc> , <http://query.org/node/node#prostate> ;
+        qt:abspm  abs:26398515 .
+
+<http://query.org/node/node#hcc>
+        a       q:node .
+
+<http://query.org/node/node#sirt>
+        a       q:node .
+
+<http://query.org/node/node#crc>
+        a       q:node .
+
+<http://query.org/node/node#compounds>
+        a       q:node .
+
+<http://query.org/node/node#physical>
+        a       q:node .
+
+<http://query.org/node/node#complications>
+        a       q:node .
+
+<http://query.org/node/node#dna>
+        a       q:node .
+
+<http://query.org/node/node#activity>
+        a       q:node .
+
+abs:26395796  a  abs: .
+
+<http://query.org/node/node#chronic>
+        a       q:node .
+
+<http://query.org/node/node#years>
+        a       q:node .
+
+<http://query.org/query/0001/topic>
+        a       q:topic .
+
+<http://query.org/node/node#syndrome>
+        a       q:node .
+
+<http://query.org/node/node#growth>
+        a       q:node .
+
+<http://query.org/node/node#clinical>
+        a       q:node .
+
+<http://query.org/node/node#obese>
+        a       q:node .
+
+<http://query.org/node/node#apoptosis>
+        a       q:node .
+
+<http://query.org/node/node#death>
+        a       q:node .
+
+abs:26396684  a  abs: .
+
+<http://query.org/node/node#tumor>
+        a       q:node .
+
+<http://query.org/node/node#pparî>
+        a       q:node .
+
+<http://query.org/node/node#serum>
+        a       q:node .
+
+<http://query.org/node/node#pcos>
+        a       q:node .
+
+abs:26398515  a  abs: .
+
+<http://query.org/node/node#liver>
+        a       q:node .
+
+<http://query.org/node/node#cell>
+        a       q:node .
+
+<http://query.org/query/0001/topic/topic#8>
+        a         q:topic ;
+        qn:node   <http://query.org/node/node#metformin> , <http://query.org/node/node#tumor> , <http://query.org/node/node#ampk> , <http://query.org/node/node#mutations> , <http://query.org/node/node#growth> , <http://query.org/node/node#therapy> , <http://query.org/node/node#development> , <http://query.org/node/node#cell> , <http://query.org/node/node#symptoms> , <http://query.org/node/node#heart> , <http://query.org/node/node#apoptosis> , <http://query.org/node/node#proliferation> , <http://query.org/node/node#pain> , <http://query.org/node/node#cells> , <http://query.org/node/node#thyroid> ;
+        qt:abspm  abs:26395424 .
+
+<http://query.org/node/node#gene>
+        a       q:node .
+
+<http://query.org/node/node#development>
+        a       q:node .
+
+<http://query.org/node/node#group>
+        a       q:node .
+
+<http://query.org/query/0001/edge>
+        a       q:edge .
+
+<http://query.org/node/node#postoperative>
+        a       q:node .
+
+<http://query.org/node/node#heart>
+        a       q:node .
+
+<http://query.org/node/node#muscle>
+        a       q:node .

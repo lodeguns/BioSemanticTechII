@@ -1,0 +1,1524 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:qe="http://query.org/query/0001/edge/"
+    xmlns:qn="http://query.org/node/"
+    xmlns:j.0="http://www.ncbi.nlm.nih.gov/pubmed/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.1="http://query.org/query/0001/topic/"
+    xmlns:q="http://query.org/"
+    xmlns:qq="http://query.org/query/">
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+    <rdf:type>
+      <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:subClassOf>
+          <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+            <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            <rdf:type>
+              <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+                <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+                <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+                <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+              </rdfs:Resource>
+            </rdf:type>
+          </rdfs:Resource>
+        </rdfs:subClassOf>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      </rdfs:Resource>
+    </rdf:type>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://query.org/query/0001/topic">
+    <rdf:type>
+      <rdfs:Resource rdf:about="http://query.org/topic">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:comment>Resource that describes the Topic Models, executed with
+                  LDA - VEM. The class for each instance of Topic presents 15 terms most important for a specific Topic
+                  and the abstracts linked.</rdf:comment>
+        <rdfs:subClassOf rdf:resource="http://query.org/topic"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+      </rdfs:Resource>
+    </rdf:type>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://query.org/query/0001/">
+    <rdf:type>
+      <rdfs:Resource rdf:about="http://query.org/query">
+        <rdf:comment>The class Query, its instances are the executed queries.
+                  For these reasons this class is cohesive with the class Edge and Nodes. </rdf:comment>
+        <rdfs:subClassOf rdf:resource="http://query.org/query"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:comment>The class Query, its instances are the executed queries.
+                   For these reasons this class is cohesive with the class Edge and Nodes. </rdf:comment>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      </rdfs:Resource>
+    </rdf:type>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range>
+      <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      </rdfs:Resource>
+    </rdfs:range>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+    <rdf:type>
+      <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      </rdfs:Resource>
+    </rdf:type>
+  </rdfs:Resource>
+  <rdf:Bag rdf:about="http://query.org/query/0001/edge/bag">
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#1">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.33</qe:correlation>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#cancer">
+            <rdf:type>
+              <rdfs:Resource rdf:about="http://query.org/node">
+                <rdf:comment>The class Node. Its instances are the terms used by the instances of the class Query,
+                  for the study of the Topics both for the study of the terms correlations (class Edge).</rdf:comment>
+                <rdfs:subClassOf rdf:resource="http://query.org/node"/>
+                <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+                <rdf:comment>The class Node. Its instances are the terms used by the instances of the class Query,
+                        for the study of the Topics both for the study of the terms correlations (class Edge).</rdf:comment>
+                <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+              </rdfs:Resource>
+            </rdf:type>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#breast">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#2">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.31</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#cancer"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#risk">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#3">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.28</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#cancer"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#prostate">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#4">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.25</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#cancer"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cancers"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#5">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#cancer"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#colorectal">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#6">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#cancer"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#diabetes">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#7">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.2</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#cancer"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#association">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#8">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.34</qe:correlation>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#neoplasms"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#kobe"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#9">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.32</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#metachronous"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#10">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.29</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#acromegalyassociated"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#11">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.26</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#extrapituitary"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#12">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cteaching"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#13">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#edmonton"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#14">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#fnh"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#15">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#fnhs"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#16">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#hcas"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#17">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#hypervascular"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#18">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#peliosis"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#19">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#synchronous"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#20">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#neoplasms"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#tumourlike"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#21">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.4</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#diabetes"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#type"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#22">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.26</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#diabetes"/>
+        <qn:node rdf:resource="http://query.org/node/node#risk"/>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#23">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#diabetes"/>
+        <qn:node rdf:resource="http://query.org/node/node#cancer"/>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#24">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.23</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#diabetes"/>
+        <qn:node rdf:resource="http://query.org/node/node#association"/>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#25">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.41</qe:correlation>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#insipidus"/>
+        </qn:node>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#oligoastrocytoma"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#26">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.41</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#oligodendroglioma"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#27">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.41</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#tmz"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#28">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.41</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#tmzinduced"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#29">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.38</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#pituitary">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#30">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.37</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#polyuria"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#31">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.32</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#desmopressin"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#32">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.31</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#cerebrospinal"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#33">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.3</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#sellar"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#34">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.29</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#transsphenoidal"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#35">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.28</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#polydipsia"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#36">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.26</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#endoscopic"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#37">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.25</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#craniopharyngioma"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#38">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.25</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#visual"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#39">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#alkylating"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#40">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#anterior"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#41">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#endonasal"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#42">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#panhypopituitarism"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#43">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#pathologicallyconfirmed"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#44">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#patientage"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#45">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.24</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#timeperiod"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#46">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.23</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#recur"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#47">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.21</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#antidiuretic"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#48">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.21</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#bright"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#49">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.21</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#concentrating"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#50">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.21</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#craniopharyngiomas"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#51">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.2</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#intracranial"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+    <rdf:li>
+      <q:edge rdf:about="http://query.org/query/0001/edge/edge#52">
+        <qe:correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >0.2</qe:correlation>
+        <qn:node rdf:resource="http://query.org/node/node#insipidus"/>
+        <qn:node>
+          <q:node rdf:about="http://query.org/node/node#permanent"/>
+        </qn:node>
+      </q:edge>
+    </rdf:li>
+  </rdf:Bag>
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://query.org/query/0001/edge">
+    <rdf:type>
+      <rdfs:Resource rdf:about="http://query.org/edge">
+        <rdf:comment>The class Edge, its istances represents the correlations between two Nodes. 
+                  This class is cohesive with the RDF Bag container class. </rdf:comment>
+        <rdfs:subClassOf rdf:resource="http://query.org/edge"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:comment>The class Edge, its istances represents the correlations between two Nodes. 
+                        This class is cohesive with the RDF Bag container class. </rdf:comment>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      </rdfs:Resource>
+    </rdf:type>
+  </rdfs:Resource>
+  <rdfs:Container rdf:about="http://query.org/query/0001/topic/bag">
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#1">
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26395796">
+            <rdf:type>
+              <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/">
+                <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+                <rdf:comment>This resource is an external resource that 
+                        refers to the service of pubmed. We use this resource for link the abstracts
+                        related to a particular topic by their unique identifier.</rdf:comment>
+                <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+                <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+              </rdfs:Resource>
+            </rdf:type>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#insulin">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#protein">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#muscle">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#endometrial">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#resistance">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#breast"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#lung">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#stress">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#studies">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <qn:node rdf:resource="http://query.org/node/node#risk"/>
+        <qn:node rdf:resource="http://query.org/node/node#colorectal"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#bladder">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#increased">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#cancer"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#signaling">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <rdfs:Resource rdf:about="http://query.org/query/0001/topic/topic#2">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#conditions">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#cvd">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#adults">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#physical">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#hypertension">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#sirt">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#activity">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#children">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#research">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#health">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#cardiovascular">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#bone">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26391722">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#chronic">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#mitochondrial">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://query.org/topic"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#disease">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </rdfs:Resource>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#3">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#dna">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#hcv">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#serum">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#infection">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#models">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#reconstruction">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#skin">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#vitamin">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#cardiac">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26395490">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#stroke">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#comorbidities">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#chemotherapy">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <qn:node rdf:resource="http://query.org/node/node#pituitary"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#data">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#fgf">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <rdfs:Resource rdf:about="http://query.org/query/0001/topic/topic#4">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#clinical">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#studies"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#mice">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#diseases">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#total">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#care">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#tumors">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#human">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#fat">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#intake">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#adipose">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#mortality">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#tissue">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://query.org/topic"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#diet">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26394722">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#dietary">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </rdfs:Resource>
+    </rdf:li>
+    <rdf:li>
+      <rdfs:Resource rdf:about="http://query.org/query/0001/topic/topic#5">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#genetic">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#hcc">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#liver">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#diabetes"/>
+        <rdf:type rdf:resource="http://query.org/topic"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#men">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#history">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#mir">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#risk"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#nafld">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#mellitus">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#pancreatic">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26398515">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node rdf:resource="http://query.org/node/node#association"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#consumption">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#crc">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#prostate"/>
+      </rdfs:Resource>
+    </rdf:li>
+    <rdf:li>
+      <q:topic rdf:about="http://query.org/query/0001/topic/topic#6">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#level">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#mass">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#pparî">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26390057">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#mets">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#syndrome">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#followup">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#tdm">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#compounds">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#egfr">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#pâ€‰â€‰">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#igf">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#tumor">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#analysis">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#effects">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#metabolic">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </q:topic>
+    </rdf:li>
+    <rdf:li>
+      <rdfs:Resource rdf:about="http://query.org/query/0001/topic/topic#7">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#weight">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#women">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26396684">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node rdf:resource="http://query.org/node/node#risk"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#pcos">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#men"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#obese">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#levels">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://query.org/topic"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#smoking">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#disease"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#acid">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#serum"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#bmi">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#obesity">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#higher">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#exposure">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </rdfs:Resource>
+    </rdf:li>
+    <rdf:li>
+      <rdfs:Resource rdf:about="http://query.org/query/0001/topic/topic#8">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#metformin">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#tumor"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#ampk">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#mutations">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#growth">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#therapy">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://query.org/topic"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#development">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#cell">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#symptoms">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#heart">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#apoptosis">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#proliferation">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26395424">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#pain">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#cells">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#thyroid">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </rdfs:Resource>
+    </rdf:li>
+    <rdf:li>
+      <rdfs:Resource rdf:about="http://query.org/query/0001/topic/topic#9">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#surgery">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#disease"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#group">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26398221">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#prevalence">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#cases">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#years">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#screening">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#age">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://query.org/topic"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#patients">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#postoperative">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#diabetic">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#complications">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#death">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#control">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#survival">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+      </rdfs:Resource>
+    </rdf:li>
+    <rdf:li>
+      <rdfs:Resource rdf:about="http://query.org/query/0001/topic/topic#10">
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#stage">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#gene">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#kidney">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#blood">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <j.1:abspm>
+          <rdfs:Resource rdf:about="http://www.ncbi.nlm.nih.gov/pubmed/26397987">
+            <rdf:type rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+          </rdfs:Resource>
+        </j.1:abspm>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#expression">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#pca">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#glucose">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#risk"/>
+        <qn:node rdf:resource="http://query.org/node/node#age"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#high">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#factors">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <rdf:type rdf:resource="http://query.org/topic"/>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#gastric">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#renal">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node>
+          <rdfs:Resource rdf:about="http://query.org/node/node#treatment">
+            <rdf:type rdf:resource="http://query.org/node"/>
+          </rdfs:Resource>
+        </qn:node>
+        <qn:node rdf:resource="http://query.org/node/node#levels"/>
+      </rdfs:Resource>
+    </rdf:li>
+    <rdf:type>
+      <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf>
+          <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+            <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+            <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+          </rdfs:Resource>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+      </rdfs:Resource>
+    </rdf:type>
+  </rdfs:Container>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type>
+      <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+      </rdfs:Resource>
+    </rdf:type>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Resource>
+  <rdfs:Resource rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Resource>
+</rdf:RDF>
