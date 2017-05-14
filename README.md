@@ -1,6 +1,7 @@
 # BioSemanticTechII
-Multi-topic analysis leveraging PubMed abstracts and MeSH terms. 
-Please refer to the full documentation [here](https://github.com/lodeguns/BioSemanticTechII/blob/master/Topic%20Analysis%20on%20PubMed%20abstracts%20and%20MeSH%20terms%20with%20R%20and%20SPRQL.pdf).
+This repository contains an example of multi-topic analysis leveraging PubMed abstracts and MeSH terms. 
+The source code is developed in R. 
+Please refer to the full documentation [here](https://github.com/lodeguns/BioSemanticTechII/blob/master/Topic%20Analysis%20on%20PubMed%20abstracts%20and%20MeSH%20terms%20with%20R%20and%20SPRQL.pdf) and its citations.
 
 **An interesting function: MeSH SPARQL EndPoint queryied with R** 
 
