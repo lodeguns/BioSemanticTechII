@@ -8,7 +8,7 @@ Please refer to the full documentation [here](https://github.com/lodeguns/BioSem
 For those impatient here a query to MeSH SPARQL EndPoint of PubMed terms. These terms are extracted from the PubMed abstracts due to a topic analysis. Through these types of functions and future developments it is possible to infer the causality between diseases, moreover, their comorbidities.
 
 
-```
+```R
 
 queryMeSH15 <- function(vect){
 
